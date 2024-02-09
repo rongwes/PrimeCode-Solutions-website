@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="general.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!--Header-->
+  <section class="sub-header">
+    <nav>
+      <a href="homepage.html">Logo image</a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <!--<li><a href="">Projects</a></li>-->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>About Us</h1>
+  </section>
+
+<!--About Us content-->
+<!--&#8211 is the HTML Entity dash-->
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <img src="about.jpg">
+    </div>
+    <div class="about-col">
+      <h1>Incorporation and Founding Vision:</h1>
+      <p>Founded on January 15, 2024, by Morongwe Molaba and a team of experienced Promaths alumni &#8211 Mankgethwa Matabane, Neo Motaung, Letsekang Matubatuba, and Retshidisitswe Radebe &#8211 PrimeCode Solutions was established with a clear vision to address the technological gaps in our hometown. The primary objective is to foster community development through strategic technology implementation.
+      </p>
+      <h1>Team Composition:</h1>
+      <p>PrimeCode Solutions is composed of a collaborative and diverse team of skilled software engineers, dedicated to leveraging their collective expertise for the benefit of the community.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="about-col">
+      <h1>Mission and Immediate Objectives:</h1>
+      <p>PrimeCode Solutions aims to empower the community through a phased approach to technological integration. The immediate objectives include:<br><li><b>Strategic Technological Integration:</b> Identify key areas for technology application and initiate the development of tailored solutions.</li>
+      <li><b>Skill Development Initiatives:</b> Implement training and mentorship programs to cultivate local talent and enhance digital capabilities.</li>
+    <li><b>Community Engagement:</b> Establish robust connections with residents, local businesses, and organizations to gain insights into specific needs and challenges, ensuring a targeted approach to solution development.</li></p>
+    </div>
+    <div class="about-col">
+      <img src="gap.jpeg">
+    </div>
+  </div>
+</section>
+<!--Footer-->
+  <section class="footer">
+    <div class="left">
+      <a href="homepage.html">Logo image</a>
+      <p>At PrimeCode Solutions, we combine technical expertise with a commitment to innovation, ensuring that our clients receive high-quality solutions that meet the evolving demands of the digital landscape.</p>
+    </div>
+    <div class="middle">
+      <h2>Site map</h2>
+      <a href="index.html">Home</a>
+      <a href="aboutUs.html">About us</a>
+      <a href="services.html">Services</a>
+      <!--<a href="">Projects</a>-->
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="right">
+      <p>Email:primecode@solutions.co.za</p>
+      <h3>Follow Us</h3>
+      <div class="icons">
+        <a href="https://web.facebook.com/natasha.molaba" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-twitter" target="_blank"></i></a>
+        <a href=""><i class="fa fa-instagram" target="_blank"></i></a>
+        <a href=""><i class="fa fa-linkedin" target="_blank"></i></a>
+        </div>
+    </div>
+    <!--Code for icons
+    -->
+  </section>
+  <div class="footer-last-part">
+    <p class="developed">Developed and Maintained by <strong>PrimeCode Solutions</strong></p>
+  </div>
+  <!--JS for Toggle Menu-->
+  <script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    };
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    };
+  </script>
+</body>
+</html>
