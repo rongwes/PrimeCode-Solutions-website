@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="Get in touch with PrimeCode Solutions for professional software engineering services. Contact us for frontend, backend, and mobile development projects." />
+    <meta name="keywords" content="contact PrimeCode Solutions, software development contact, get in touch, project inquiry" />
     <meta name="author" content="Morongwe Molaba" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="/Black_bg.jpg" />
+    <meta property="og:title" content="Contact Us - PrimeCode Solutions" />
+    <meta property="og:description" content="Ready to start your next software project? Contact PrimeCode Solutions today for professional development services." />
+    <meta property="og:image" content="/img/logo.png" />
 
     <!--Page icon-->
-    <link rel="icon" href="img/temp_icon.png" type="image/x-icon" />
-    <title>PrimeCode Solutions</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <title>Contact Us - PrimeCode Solutions</title>
 
     <link rel="stylesheet" href="css/general.css" />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -27,147 +26,365 @@
     <section class="sub-header">
       <nav>
         <a href="index.html">
-            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
+          <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
         </a>
         <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <button class="mobile-close" onclick="hideMenu()">
+            <i class="fa fa-times"></i>
+          </button>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutUs.html">About us</a></li>
             <li><a href="services.html">Services</a></li>
-            <!--<li><a href="">Projects</a></li>-->
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <button class="mobile-menu-toggle" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </button>
       </nav>
 
       <h1>Contact Us</h1>
     </section>
 
-    <!--Contact-->
-    <section class="location">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224262.87157409827!2d28.653416579755778!3d-28.566538435140814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef2b0f9699e0c9b%3A0x23ea9ed3793f6557!2sPhuthaditjhaba!5e0!3m2!1sen!2sza!4v1707415087183!5m2!1sen!2sza"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
+    <!--Main Content-->
+    <div class="main-content">
+      <!--Contact Information-->
+      <section class="contact-us">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+              Ready to start your next project? We'd love to hear from you. 
+              Send us a message and we'll respond as soon as possible.
+            </p>
+          </div>
 
-    <section class="contact-us">
-      <div class="row">
-        <div class="contact-col">
-          <div>
-            <i class="fa fa-home"></i>
-            <span>
-              <p>Phuthaditjhaba, Free State</p>
-            </span>
+          <div class="contact-content">
+            <div class="contact-info-section">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Our Location</h5>
+                  <p>Phuthaditjhaba, Free State<br>South Africa</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Email Address</h5>
+                  <p>primecode-solutions@outlook.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Response Time</h5>
+                  <p>We typically respond within 24 hours<br>Monday to Friday, 9AM to 5PM</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa fa-users"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Follow Us</h5>
+                  <div class="social-icons" style="margin-top: 0.5rem;">
+                    <a href="https://web.facebook.com/natasha.molaba" target="_blank" class="social-icon" style="width: 35px; height: 35px;">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" style="width: 35px; height: 35px;">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" style="width: 35px; height: 35px;">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" style="width: 35px; height: 35px;">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <h3 style="margin-bottom: 1.5rem; color: var(--text-primary); font-size: 1.5rem; font-weight: 700;">
+                Send us a Message
+              </h3>
+              <form action="form-handler.php" method="post">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    class="form-control"
+                    placeholder="What is this about?"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    placeholder="Tell us about your project or inquiry..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                  <i class="fa fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
-          <!--
-    <div class="contact-col">
-      <div>
-        <i class="fa fa-phone"></i>
-        <span>
-          <h5>numbers<h5>
-          <p>Monday to Friday, 9AM to 4PM/p>
-        </span>
-      </div>
+        </div>
+      </section>
+
+      <!--Location Map-->
+      <section class="location">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">
+              We're located in Phuthaditjhaba, Free State. Visit us or reach out digitally.
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224262.87157409827!2d28.653416579755778!3d-28.566538435140814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef2b0f9699e0c9b%3A0x23ea9ed3793f6557!2sPhuthaditjhaba!5e0!3m2!1sen!2sza!4v1707415087183!5m2!1sen!2sza"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section style="background: var(--card-background); padding: 5rem 0;">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+          
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-question-circle"></i>
+              </div>
+              <h2>What services do you offer?</h2>
+              <p>
+                We specialize in frontend development, backend development, and mobile 
+                app development. We handle the complete software development lifecycle 
+                from planning to deployment and maintenance.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <h2>How long does a project take?</h2>
+              <p>
+                Project timelines vary based on complexity and requirements. Simple 
+                websites may take 2-4 weeks, while complex applications can take 
+                3-6 months. We'll provide a detailed timeline after discussing your needs.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-money"></i>
+              </div>
+              <h2>How do you price your services?</h2>
+              <p>
+                We offer competitive pricing based on project scope, complexity, and 
+                timeline. We provide detailed quotes after understanding your requirements 
+                and can work with various budget ranges.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-support"></i>
+              </div>
+              <h2>Do you provide ongoing support?</h2>
+              <p>
+                Yes! We offer ongoing maintenance, updates, and support for all our 
+                projects. We believe in building long-term relationships with our 
+                clients and ensuring their success.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <h2>What technologies do you use?</h2>
+              <p>
+                We work with modern technologies including React, Node.js, Python, 
+                React Native, Flutter, and various databases. We choose the best 
+                technology stack for each project's specific needs.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-handshake-o"></i>
+              </div>
+              <h2>How do we get started?</h2>
+              <p>
+                Simply fill out the contact form above or send us an email. We'll 
+                schedule a consultation to discuss your project requirements, timeline, 
+                and budget to create a customized solution for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    -->
-          <div>
-            <i class="fa fa-envelope"></i>
-            <span>
-              <h5>primecode-solutions@outlook.com</h5>
-              <p>Email us your query</p>
-            </span>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <a href="index.html">
+            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="footer-logo" />
+          </a>  
+          <p class="footer-description">
+            At PrimeCode Solutions, we combine technical expertise with a
+            commitment to innovation, ensuring that our clients receive
+            high-quality solutions that meet the evolving demands of the digital
+            landscape.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Get In Touch</h3>
+          <div class="contact-info">
+            <p>Email: primecode-solutions@outlook.com</p>
+          </div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/natasha.molaba" target="_blank" class="social-icon">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
           </div>
         </div>
-        <div class="contact-col">
-          <form action="form-handler.php" method="post">
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter email address"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Enter the subject"
-              required
-            />
-            <textarea
-              rows="8"
-              name="messsage"
-              placeholder="Write the message"
-              required
-            ></textarea>
-            <button type="submit" class="hero-btn">Send Message</button>
-          </form>
-        </div>
       </div>
-    </section>
-    <!--Footer-->
-    <section class="footer">
-      <div class="left">
-        <a href="index.html">
-            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
-        </a>
+      
+      <div class="footer-bottom">
         <p>
-          At PrimeCode Solutions, we combine technical expertise with a
-          commitment to innovation, ensuring that our clients receive
-          high-quality solutions that meet the evolving demands of the digital
-          landscape.
+          &copy; 2025 PrimeCode Solutions (PTY) LTD. All rights reserved. | Developed and Maintained by <strong>PrimeCode Solutions</strong>
         </p>
       </div>
-      <div class="middle">
-        <h2>Site map</h2>
-        <a href="index.html">Home</a>
-        <a href="aboutUs.html">About us</a>
-        <a href="services.html">Services</a>
-        <!--<a href="">Projects</a>-->
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="right">
-        <p>Email:primecode-solutions@outlook.com</p>
-        <h3>Follow Us</h3>
-        <div class="icons">
-          <a href="https://web.facebook.com/natasha.molaba" target="_blank"
-            ><i class="fa fa-facebook"></i
-          ></a>
-          <a href=""><i class="fa fa-twitter" target="_blank"></i></a>
-          <a href=""><i class="fa fa-instagram" target="_blank"></i></a>
-          <a href=""><i class="fa fa-linkedin" target="_blank"></i></a>
-        </div>
-      </div>
-      <!--Code for icons
-    --></section>
-    <div class="footer-last-part">
-      <p class="developed">
-        Developed and Maintained by <strong>Morongwe Molaba</strong>
-      </p>
-    </div>
+    </footer>
+
     <!--JS for Toggle Menu-->
     <script>
       let navLinks = document.getElementById("navLinks");
 
       function showMenu() {
-        navLinks.style.right = "0";
+        navLinks.classList.add("active");
+        document.body.style.overflow = "hidden";
       }
 
       function hideMenu() {
-        navLinks.style.right = "-200px";
+        navLinks.classList.remove("active");
+        document.body.style.overflow = "auto";
       }
+
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', hideMenu);
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!navLinks.contains(event.target) && !event.target.closest('.mobile-menu-toggle')) {
+          hideMenu();
+        }
+      });
+
+      // Form validation enhancement
+      document.querySelector('form').addEventListener('submit', function(e) {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !subject || !message) {
+          e.preventDefault();
+          alert('Please fill in all required fields.');
+          return false;
+        }
+
+        // Simple email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          e.preventDefault();
+          alert('Please enter a valid email address.');
+          return false;
+        }
+      });
     </script>
   </body>
 </html>

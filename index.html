@@ -12,7 +12,7 @@
     <meta property="og:image" content="/Black_bg.jpg" />
 
     <!--Page icon-->
-    <link rel="icon" href="img/temp_icon.png" type="image/x-icon" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
     <title>PrimeCode Solutions</title>
     <link rel="stylesheet" href="css/homepage.css" />
 
@@ -28,168 +28,248 @@
             <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
         </a>
         <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <button class="mobile-close" onclick="hideMenu()">
+            <i class="fa fa-times"></i>
+          </button>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="aboutUs.html">About us</a></li>
             <li><a href="services.html">Services</a></li>
-            <!--<li><a href="">Projects</a></li>-->
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <button class="mobile-menu-toggle" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </button>
       </nav>
 
       <div class="text-box">
         <h1>
-          Transforming Ideas into Seamless Digital Experiences - Where
-          Innovation Meets Precision.
+          Transforming Ideas into Seamless Digital Experiences
         </h1>
         <p>
           At PrimeCode Solutions, we are a dynamic team of experts specializing
           in cutting-edge software engineering: frontend and backend
           development, and mobile app creation. With a passion for innovation
           and a commitment to precision, we turn your concepts into flawless
-          digital solutions, ensuring your vision becomes a reality in the
-          ever-evolving tech landscape.
+          digital solutions.
         </p>
+        <div class="hero-cta">
+          <a href="services.html" class="btn-primary">
+            Explore Services
+            <i class="fa fa-arrow-right"></i>
+          </a>
+          <a href="contact.html" class="btn-secondary">
+            Get Started
+            <i class="fa fa-external-link"></i>
+          </a>
+        </div>
       </div>
     </section>
 
     <!--Vision-->
-    <section class="vision">
-      <h1>Vision</h1>
+    <div class="main-content">
+      <section class="vision section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Vision</h2>
+          </div>
+          <div class="vision-content">
+            <div class="vision-text">
+              PrimeCode Solutions envisions itself as a prominent force driving
+              technological innovation, shaping a future where excellence in
+              business solutions contributes to societal advancement. Our vision
+              is to establish a reputation as a premier tech solutions provider,
+              influencing industries, communities, and the educational landscape.
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div class="row-vision">
-        <div class="vision-col">
-          <p>
-            PrimeCode Solutions envisions itself as a prominent force driving
-            technological innovation, shaping a future where excellence in
-            business solutions contributes to societal advancement. Our vision
-            is to establish a reputation as a premier tech solutions provider,
-            influencing industries, communities, and the educational landscape.
-          </p>
+      <!--Mission-->
+      <section class="mission section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Mission</h2>
+          </div>
+          <div class="mission-content">
+            <div class="mission-text">
+              Our mission is dual-fold. Firstly, we are dedicated to delivering
+              cutting-edge frontend and backend development, mobile development,
+              and other software engineering services, prioritizing client
+              satisfaction and industry excellence. Secondly, we are committed to
+              advocating for the pivotal role of technology in modern education,
+              cultivating a skilled tech workforce, and catalyzing positive
+              societal change. Through our unwavering commitment to excellence,
+              innovation, and community engagement, we strive to bridge the gap
+              between technological potential and tangible achievements.
+            </div>
+            <div class="mission-image">
+              <img src="img/mission.jpg" alt="Our Mission" />
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Mission-->
-    <section class="mission">
-      <h1>Mission</h1>
-      <div class="row-mission">
-        <div class="mission-col">
-          <p>
-            Our mission is dual-fold. Firstly, we are dedicated to delivering
-            cutting-edge frontend and backend development, mobile development,
-            and other software engineering services, prioritizing client
-            satisfaction and industry excellence. Secondly, we are committed to
-            advocating for the pivotal role of technology in modern education,
-            cultivating a skilled tech workforce, and catalyzing positive
-            societal change. Through our unwavering commitment to excellence,
-            innovation, and community engagement, we strive to bridge the gap
-            between technological potential and tangible achievements.
-          </p>
+      <!--Key Services-->
+      <section class="key-services section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Key Services</h2>
+            <p class="section-subtitle">
+              We are a software engineering company that delivers end-to-end
+              solutions, covering everything from web development and mobile
+              applications to system architecture and maintenance.
+            </p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <h2>FRONTEND DEVELOPMENT</h2>
+              <p>
+                PrimeCode Solutions specializes in crafting engaging and responsive
+                user interfaces (UI) using cutting-edge frontend technologies. Our
+                frontend development expertise ensures seamless and intuitive user
+                experiences, aligning with the latest design principles and industry
+                standards.
+              </p>
+              <a href="services.html" class="service-link">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-server"></i>
+              </div>
+              <h2>BACKEND DEVELOPMENT</h2>
+              <p>
+                Our backend development services focus on creating robust, scalable,
+                and secure server-side architecture. From database design to API
+                development, we engineer the backbone of your applications,
+                optimizing performance and ensuring smooth data flow, processing,
+                and storage.
+              </p>
+              <a href="services.html" class="service-link">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-mobile"></i>
+              </div>
+              <h2>MOBILE DEVELOPMENT</h2>
+              <p>
+                PrimeCode Solutions excels in mobile app development across various
+                platforms, including iOS and Android. Leveraging the latest
+                frameworks and technologies, we design and build custom mobile
+                applications that deliver superior performance, intuitive
+                navigation, and a compelling user experience.
+              </p>
+              <a href="services.html" class="service-link">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="mission-col">
-          <img src="img/mission.jpg" />
-        </div>
-      </div>
-    </section>
-
-    <!--Key Services-->
-    <section class="key-services">
-      <h1>Key Services</h1>
-      <p class="key-services-description">
-        We are a software engineering company that delivers end-to-end
-        solutions, covering everything from web development and mobile
-        applications to system architecture and maintenance.
-      </p>
-      <div class="row">
-        <div class="key-services-col">
-          <h2>FRONTEND DEVELOPMENT</h2>
-          <p>
-            PrimeCode Solutions specializes in crafting engaging and responsive
-            user interfaces (UI) using cutting-edge frontend technologies. Our
-            frontend development expertise ensures seamless and intuitive user
-            experiences, aligning with the latest design principles and industry
-            standards.
-          </p>
-        </div>
-        <div class="key-services-col">
-          <h2>BACKEND DEVELOPMENT</h2>
-          <p>
-            Our backend development services focus on creating robust, scalable,
-            and secure server-side architecture. From database design to API
-            development, we engineer the backbone of your applications,
-            optimizing performance and ensuring smooth data flow, processing,
-            and storage.
-          </p>
-        </div>
-        <div class="key-services-col">
-          <h2>MOBILE DEVELOPMENT</h2>
-          <p>
-            PrimeCode Solutions excels in mobile app development across various
-            platforms, including iOS and Android. Leveraging the latest
-            frameworks and technologies, we design and build custom mobile
-            applications that deliver superior performance, intuitive
-            navigation, and a compelling user experience.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!--Footer-->
-    <section class="footer">
-      <div class="left">
-        <a href="index.html">
-            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
-        </a>  
-        <p>
-          At PrimeCode Solutions, we combine technical expertise with a
-          commitment to innovation, ensuring that our clients receive
-          high-quality solutions that meet the evolving demands of the digital
-          landscape.
-        </p>
-      </div>
-      <div class="middle">
-        <h2>Site map</h2>
-        <a href="index.html">Home</a>
-        <a href="aboutUs.html">About us</a>
-        <a href="services.html">Services</a>
-        <!--<a href="">Projects</a>-->
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="right">
-        <p>Email:primecode-solutions@outlook.com</p>
-        <h3>Follow Us</h3>
-        <div class="icons">
-          <a href="https://web.facebook.com/natasha.molaba" target="_blank"
-            ><i class="fa fa-facebook"></i
-          ></a>
-          <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
-          <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <a href="index.html">
+            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="footer-logo" />
+          </a>  
+          <p class="footer-description">
+            At PrimeCode Solutions, we combine technical expertise with a
+            commitment to innovation, ensuring that our clients receive
+            high-quality solutions that meet the evolving demands of the digital
+            landscape.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Get In Touch</h3>
+          <div class="contact-info">
+            <p>Email: primecode-solutions@outlook.com</p>
+          </div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/natasha.molaba" target="_blank" class="social-icon">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <!--Code for icons
-    --></section>
-    <div class="footer-last-part">
-      <p class="developed">
-        Developed and Maintained by <strong>Morongwe Molaba</strong>
-      </p>
-    </div>
+      
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 PrimeCode Solutions (PTY) LTD. All rights reserved. | Developed and Maintained by <strong>PrimeCode Solutions</strong>
+        </p>
+      </div>
+    </footer>
 
     <!--JS for Toggle Menu-->
     <script>
       let navLinks = document.getElementById("navLinks");
 
       function showMenu() {
-        navLinks.style.right = "0";
+        navLinks.classList.add("active");
+        document.body.style.overflow = "hidden";
       }
 
       function hideMenu() {
-        navLinks.style.right = "-200px";
+        navLinks.classList.remove("active");
+        document.body.style.overflow = "auto";
       }
+
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', hideMenu);
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!navLinks.contains(event.target) && !event.target.closest('.mobile-menu-toggle')) {
+          hideMenu();
+        }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
     </script>
   </body>
 </html>

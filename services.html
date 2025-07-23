@@ -3,144 +3,306 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="Comprehensive software engineering services including frontend development, backend development, and mobile app development by PrimeCode Solutions." />
+    <meta name="keywords" content="frontend development, backend development, mobile development, software engineering services, web development" />
     <meta name="author" content="Morongwe Molaba" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="/Black_bg.jpg" />
+    <meta property="og:title" content="Our Services - PrimeCode Solutions" />
+    <meta property="og:description" content="Professional software engineering services covering the entire development lifecycle - from web development to mobile applications." />
+    <meta property="og:image" content="/img/front-end.png" />
 
     <!--Page icon-->
-    <link rel="icon" href="img/temp_icon.png" type="image/x-icon" />
-    <title>PrimeCode Solutions</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <title>Our Services - PrimeCode Solutions</title>
 
     <link rel="stylesheet" href="css/general.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <!--Header-->
     <section class="sub-header">
       <nav>
         <a href="index.html">
-            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
+          <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
         </a>
         <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <button class="mobile-close" onclick="hideMenu()">
+            <i class="fa fa-times"></i>
+          </button>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutUs.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <!--<li><a href="">Projects</a></li>-->
+            <li><a href="services.html" class="active">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <button class="mobile-menu-toggle" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </button>
       </nav>
 
-      <h1>Services</h1>
+      <h1>Our Services</h1>
     </section>
 
-    <!--Services-->
-    <section class="key-services">
-      <p class="key-services-description">
-        Our software engineering services encompass the entire software
-        development lifecycle. From conceptualization and design to coding,
-        testing, and deployment, we apply industry best practices to deliver
-        robust, scalable, and maintainable software solutions tailored to your
-        specific business needs.
-      </p>
-      <div class="row">
-        <div class="key-services-col">
-          <img src="img/front-end.png" />
-          <h2>FRONTEND DEVELOPMENT</h2>
-          <p>
-            PrimeCode Solutions specializes in crafting engaging and responsive
-            user interfaces (UI) using cutting-edge frontend technologies. Our
-            frontend development expertise ensures seamless and intuitive user
-            experiences, aligning with the latest design principles and industry
-            standards.
+    <!--Main Content-->
+    <div class="main-content">
+      <!--Services Overview-->
+      <section class="key-services">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">What We Offer</h2>
+            <p class="section-subtitle">
+              Our software engineering services encompass the entire software
+              development lifecycle. From conceptualization and design to coding,
+              testing, and deployment, we apply industry best practices to deliver
+              robust, scalable, and maintainable software solutions tailored to your
+              specific business needs.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <h2>FRONTEND DEVELOPMENT</h2>
+              <p>
+                PrimeCode Solutions specializes in crafting engaging and responsive
+                user interfaces (UI) using cutting-edge frontend technologies. Our
+                frontend development expertise ensures seamless and intuitive user
+                experiences, aligning with the latest design principles and industry
+                standards.
+              </p>
+              <div style="margin-top: 2rem;">
+                <img src="img/front-end.png" alt="Frontend Development" style="width: 100%; max-width: 200px; height: auto; border-radius: 10px;">
+              </div>
+              <a href="contact.html" class="service-link">
+                Get Started <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-server"></i>
+              </div>
+              <h2>BACKEND DEVELOPMENT</h2>
+              <p>
+                Our backend development services focus on creating robust, scalable,
+                and secure server-side architecture. From database design to API
+                development, we engineer the backbone of your applications,
+                optimizing performance and ensuring smooth data flow, processing,
+                and storage.
+              </p>
+              <div style="margin-top: 2rem;">
+                <img src="img/backend.jpeg" alt="Backend Development" style="width: 100%; max-width: 200px; height: auto; border-radius: 10px;">
+              </div>
+              <a href="contact.html" class="service-link">
+                Get Started <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-mobile"></i>
+              </div>
+              <h2>MOBILE DEVELOPMENT</h2>
+              <p>
+                PrimeCode Solutions excels in mobile app development across various
+                platforms, including iOS and Android. Leveraging the latest
+                frameworks and technologies, we design and build custom mobile
+                applications that deliver superior performance, intuitive
+                navigation, and a compelling user experience.
+              </p>
+              <div style="margin-top: 2rem;">
+                <img src="img/mobile1.png" alt="Mobile Development" style="width: 100%; max-width: 200px; height: auto; border-radius: 10px;">
+              </div>
+              <a href="contact.html" class="service-link">
+                Get Started <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional Services Section -->
+      <section style="background: var(--card-background); padding: 5rem 0;">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Why Choose PrimeCode Solutions?</h2>
+          </div>
+          
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-cogs"></i>
+              </div>
+              <h2>Full-Stack Expertise</h2>
+              <p>
+                Our team combines frontend and backend expertise to deliver comprehensive 
+                solutions that work seamlessly together, ensuring optimal performance and 
+                user experience across all platforms.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-rocket"></i>
+              </div>
+              <h2>Modern Technologies</h2>
+              <p>
+                We leverage the latest frameworks, tools, and methodologies to build 
+                future-ready applications that scale with your business needs and 
+                adapt to evolving market demands.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-shield"></i>
+              </div>
+              <h2>Security First</h2>
+              <p>
+                Security is built into every layer of our development process. We 
+                implement industry-standard security practices to protect your data 
+                and ensure compliance with relevant regulations.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <h2>Timely Delivery</h2>
+              <p>
+                We understand the importance of deadlines in business. Our agile 
+                development approach ensures projects are delivered on time without 
+                compromising on quality.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-support"></i>
+              </div>
+              <h2>Ongoing Support</h2>
+              <p>
+                Our relationship doesn't end at deployment. We provide continuous 
+                support, maintenance, and updates to ensure your applications perform 
+                optimally throughout their lifecycle.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <h2>Collaborative Approach</h2>
+              <p>
+                We work closely with our clients throughout the development process, 
+                ensuring transparency, regular communication, and alignment with your 
+                business objectives and vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section style="background: var(--gradient-primary); color: white; padding: 5rem 0; text-align: center;">
+        <div class="container">
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; font-weight: 700;">
+            Ready to Start Your Project?
+          </h2>
+          <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">
+            Let's discuss your requirements and bring your vision to life with our expert development team.
+          </p>
+          <a href="contact.html" class="btn-secondary">
+            Contact Us Today <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <a href="index.html">
+            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="footer-logo" />
+          </a>  
+          <p class="footer-description">
+            At PrimeCode Solutions, we combine technical expertise with a
+            commitment to innovation, ensuring that our clients receive
+            high-quality solutions that meet the evolving demands of the digital
+            landscape.
           </p>
         </div>
-        <div class="key-services-col">
-          <img src="img/backend.jpeg" />
-          <h2>BACKEND DEVELOPMENT</h2>
-          <p>
-            Our backend development services focus on creating robust, scalable,
-            and secure server-side architecture. From database design to API
-            development, we engineer the backbone of your applications,
-            optimizing performance and ensuring smooth data flow, processing,
-            and storage.
-          </p>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div class="key-services-col">
-          <img src="img/mobile1.png" />
-          <h2>MOBILE DEVELOPMENT</h2>
-          <p>
-            PrimeCode Solutions excels in mobile app development across various
-            platforms, including iOS and Android. Leveraging the latest
-            frameworks and technologies, we design and build custom mobile
-            applications that deliver superior performance, intuitive
-            navigation, and a compelling user experience.
-          </p>
+        
+        <div class="footer-section">
+          <h3>Get In Touch</h3>
+          <div class="contact-info">
+            <p>Email: primecode-solutions@outlook.com</p>
+          </div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/natasha.molaba" target="_blank" class="social-icon">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <!--Footer-->
-    <section class="footer">
-      <div class="left">
-        <a href="index.html">
-            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
-        </a>
+      
+      <div class="footer-bottom">
         <p>
-          At PrimeCode Solutions, we combine technical expertise with a
-          commitment to innovation, ensuring that our clients receive
-          high-quality solutions that meet the evolving demands of the digital
-          landscape.
+          &copy; 2025 PrimeCode Solutions (PTY) LTD. All rights reserved. | Developed and Maintained by <strong>PrimeCode Solutions</strong>
         </p>
       </div>
-      <div class="middle">
-        <h2>Site map</h2>
-        <a href="index.html">Home</a>
-        <a href="aboutUs.html">About us</a>
-        <a href="services.html">Services</a>
-        <!--<a href="">Projects</a>-->
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="right">
-        <p>Email:primecode-solutions@outlook.com</p>
-        <h3>Follow Us</h3>
-        <div class="icons">
-          <a href="https://web.facebook.com/natasha.molaba" target="_blank"
-            ><i class="fa fa-facebook"></i
-          ></a>
-          <a href=""><i class="fa fa-twitter" target="_blank"></i></a>
-          <a href=""><i class="fa fa-instagram" target="_blank"></i></a>
-          <a href=""><i class="fa fa-linkedin" target="_blank"></i></a>
-        </div>
-      </div>
-      <!--Code for icons
-    --></section>
-    <div class="footer-last-part">
-      <p class="developed">
-        Developed and Maintained by <strong>Morongwe Molaba</strong>
-      </p>
-    </div>
+    </footer>
+
     <!--JS for Toggle Menu-->
     <script>
       let navLinks = document.getElementById("navLinks");
 
       function showMenu() {
-        navLinks.style.right = "0";
+        navLinks.classList.add("active");
+        document.body.style.overflow = "hidden";
       }
 
       function hideMenu() {
-        navLinks.style.right = "-200px";
+        navLinks.classList.remove("active");
+        document.body.style.overflow = "auto";
       }
+
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', hideMenu);
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!navLinks.contains(event.target) && !event.target.closest('.mobile-menu-toggle')) {
+          hideMenu();
+        }
+      });
     </script>
   </body>
 </html>

@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="Learn about PrimeCode Solutions - founded by experienced software engineers to drive technological innovation and community development." />
+  <meta name="keywords" content="about us, software engineering company, PrimeCode Solutions, technology solutions" />
   <meta name="author" content="Morongwe Molaba" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="/Black_bg.jpg" />
+  <meta property="og:title" content="About PrimeCode Solutions - Our Story & Mission" />
+  <meta property="og:description" content="Discover our journey from founding to becoming a premier tech solutions provider focused on community development and innovation." />
+  <meta property="og:image" content="/img/about.jpg" />
 
   <!--Page icon-->
-  <link rel="icon" href="img/temp_icon.png" type="image/x-icon" />
-  <title>PrimeCode Solutions</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon" />
+  <title>About Us - PrimeCode Solutions</title>
 
   <link rel="stylesheet" href="css/general.css">
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -24,94 +23,210 @@
   <section class="sub-header">
     <nav>
       <a href="index.html">
-            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
-        </a>
+        <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
+      </a>
       <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <button class="mobile-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </button>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="aboutUs.html">About us</a></li>
+          <li><a href="aboutUs.html" class="active">About us</a></li>
           <li><a href="services.html">Services</a></li>
-          <!--<li><a href="">Projects</a></li>-->
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
+      <button class="mobile-menu-toggle" onclick="showMenu()">
+        <i class="fa fa-bars"></i>
+      </button>
     </nav>
 
     <h1>About Us</h1>
   </section>
 
-<!--About Us content-->
-<!--&#8211 is the HTML Entity dash-->
-<section class="about-us">
-  <div class="row">
-    <div class="about-col">
-      <img src="img/about.jpg">
-    </div>
-    <div class="about-col">
-      <h1>Incorporation and Founding Vision:</h1>
-      <p>Founded on January 15, 2024, by Morongwe Molaba and a team of experienced Promaths alumni &#8211 Mankgethwa Matabane, Neo Motaung, Letsekang Matubatuba, and Retshidisitswe Radebe &#8211 PrimeCode Solutions was established with a clear vision to address the technological gaps in our hometown. The primary objective is to foster community development through strategic technology implementation.
-      </p>
-      <h1>Team Composition:</h1>
-      <p>PrimeCode Solutions is composed of a collaborative and diverse team of skilled software engineers, dedicated to leveraging their collective expertise for the benefit of the community.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="about-col">
-      <h1>Mission and Immediate Objectives:</h1>
-      <p>PrimeCode Solutions aims to empower the community through a phased approach to technological integration. The immediate objectives include:<br><li><b>Strategic Technological Integration:</b> Identify key areas for technology application and initiate the development of tailored solutions.</li>
-      <li><b>Skill Development Initiatives:</b> Implement training and mentorship programs to cultivate local talent and enhance digital capabilities.</li>
-    <li><b>Community Engagement:</b> Establish robust connections with residents, local businesses, and organizations to gain insights into specific needs and challenges, ensuring a targeted approach to solution development.</li></p>
-    </div>
-    <div class="about-col">
-      <img src="img/gap.jpeg">
-    </div>
-  </div>
-</section>
-<!--Footer-->
-  <section class="footer">
-    <div class="left">
-      <a href="index.html">
-            <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="logo" />
-        </a>
-      <p>At PrimeCode Solutions, we combine technical expertise with a commitment to innovation, ensuring that our clients receive high-quality solutions that meet the evolving demands of the digital landscape.</p>
-    </div>
-    <div class="middle">
-      <h2>Site map</h2>
-      <a href="index.html">Home</a>
-      <a href="aboutUs.html">About us</a>
-      <a href="services.html">Services</a>
-      <!--<a href="">Projects</a>-->
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="right">
-      <p>Email:primecode-solutions@outlook.com</p>
-      <h3>Follow Us</h3>
-      <div class="icons">
-        <a href="https://web.facebook.com/natasha.molaba" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href=""><i class="fa fa-twitter" target="_blank"></i></a>
-        <a href=""><i class="fa fa-instagram" target="_blank"></i></a>
-        <a href=""><i class="fa fa-linkedin" target="_blank"></i></a>
+  <!--Main Content-->
+  <div class="main-content">
+    <!--About Us content-->
+    <section class="about-us">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Story</h2>
+          <p class="section-subtitle">
+            Founded by passionate software engineers dedicated to driving technological innovation 
+            and fostering community development through strategic technology implementation.
+          </p>
         </div>
-    </div>
-    <!--Code for icons
-    -->
-  </section>
-  <div class="footer-last-part">
-    <p class="developed">Developed and Maintained by <strong>Morongwe Molaba</strong></p>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h1>Incorporation and Founding Vision</h1>
+            <p>
+              Founded on January 15, 2024, by Morongwe Molaba and Retshidisitswe Radebe – 
+              PrimeCode Solutions was established with a clear 
+              vision to address the technological gaps in our hometown. The primary objective 
+              is to foster community development through strategic technology implementation.
+            </p>
+            <h1>Team Composition</h1>
+            <p>
+              PrimeCode Solutions is composed of a collaborative and diverse team of skilled 
+              software engineers, dedicated to leveraging their collective expertise for the 
+              benefit of the community.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="img/about.jpg" alt="About PrimeCode Solutions">
+          </div>
+        </div>
+
+        <div class="about-content" style="margin-top: 4rem;">
+          <div class="about-image">
+            <img src="img/gap.jpeg" alt="Bridging Technology Gap">
+          </div>
+          <div class="about-text">
+            <h1>Mission and Immediate Objectives</h1>
+            <p>
+              PrimeCode Solutions aims to empower the community through a phased approach 
+              to technological integration. Our immediate objectives include:
+            </p>
+            <ul style="margin: 1.5rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+              <li style="margin-bottom: 1rem;">
+                <strong style="color: var(--primary-color);">Strategic Technological Integration:</strong> 
+                Identify key areas for technology application and initiate the development of tailored solutions.
+              </li>
+              <li style="margin-bottom: 1rem;">
+                <strong style="color: var(--primary-color);">Skill Development Initiatives:</strong> 
+                Implement training and mentorship programs to cultivate local talent and enhance digital capabilities.
+              </li>
+              <li style="margin-bottom: 1rem;">
+                <strong style="color: var(--primary-color);">Community Engagement:</strong> 
+                Establish robust connections with residents, local businesses, and organizations to gain 
+                insights into specific needs and challenges, ensuring a targeted approach to solution development.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="section-header" style="margin-top: 6rem;">
+          <h2 class="section-title">Our Values</h2>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-lightbulb-o"></i>
+            </div>
+            <h2>Innovation</h2>
+            <p>
+              We embrace cutting-edge technologies and creative solutions to solve complex problems 
+              and drive digital transformation in our community.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-users"></i>
+            </div>
+            <h2>Community Focus</h2>
+            <p>
+              Our commitment extends beyond business success to meaningful community impact, 
+              fostering local talent and addressing real-world challenges.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-trophy"></i>
+            </div>
+            <h2>Excellence</h2>
+            <p>
+              We maintain the highest standards in our work, delivering quality solutions that 
+              exceed expectations and create lasting value for our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="index.html">
+          <img src="img/logo.png" alt="PrimeCode Solutions Logo" class="footer-logo" />
+        </a>  
+        <p class="footer-description">
+          At PrimeCode Solutions, we combine technical expertise with a
+          commitment to innovation, ensuring that our clients receive
+          high-quality solutions that meet the evolving demands of the digital
+          landscape.
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Get In Touch</h3>
+        <div class="contact-info">
+          <p>Email: primecode-solutions@outlook.com</p>
+        </div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/natasha.molaba" target="_blank" class="social-icon">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" target="_blank" class="social-icon">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank" class="social-icon">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" class="social-icon">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>
+          &copy; 2025 PrimeCode Solutions (PTY) LTD. All rights reserved. | Developed and Maintained by <strong>PrimeCode Solutions</strong>
+      </p>
+    </div>
+  </footer>
+
   <!--JS for Toggle Menu-->
   <script>
     let navLinks = document.getElementById("navLinks");
 
     function showMenu() {
-      navLinks.style.right = "0";
-    };
+      navLinks.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
 
     function hideMenu() {
-      navLinks.style.right = "-200px";
-    };
+      navLinks.classList.remove("active");
+      document.body.style.overflow = "auto";
+    }
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', hideMenu);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!navLinks.contains(event.target) && !event.target.closest('.mobile-menu-toggle')) {
+        hideMenu();
+      }
+    });
   </script>
 </body>
 </html>
