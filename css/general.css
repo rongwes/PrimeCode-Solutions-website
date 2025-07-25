@@ -46,37 +46,25 @@ body {
 
 /*Header*/
 .logo {
-  height: 50px;
+  height: 45px;
   width: auto;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 8px;
-  padding: 8px 12px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.logo:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
 }
 
 nav {
   display: flex;
-  padding: 1.5rem 6%;
+  padding: 1rem 5%;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav img {
-  height: 50px;
+  height: 45px;
   width: auto;
 }
 
@@ -87,52 +75,34 @@ nav img {
 
 .nav-links ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links ul li {
   list-style: none;
-  position: relative;
 }
 
 .nav-links ul li a {
-  color: var(--text-light);
+  color: var(--text-primary);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-links ul li a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
-}
-
-.nav-links ul li a:hover::before {
-  left: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
 }
 
 .nav-links ul li a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  background: var(--primary-color);
+  color: white;
 }
 
 .nav-links ul li a.active {
-  background: var(--gradient-primary);
+  background: var(--primary-color);
   color: white;
 }
 
@@ -141,16 +111,14 @@ nav img {
   display: none;
   background: none;
   border: none;
-  color: white;
+  color: var(--text-primary);
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
 }
 
-.mobile-menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
+.mobile-close {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -163,13 +131,12 @@ nav img {
     top: 0;
     right: -100%;
     height: 100vh;
-    width: 300px;
-    background: linear-gradient(135deg, var(--background-dark) 0%, #1e293b 100%);
-    backdrop-filter: blur(20px);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 250px;
+    background: white;
+    border-left: 1px solid var(--border-color);
+    transition: right 0.3s ease;
     z-index: 9999;
-    padding: 2rem 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   }
   
   .nav-links.active {
@@ -179,39 +146,46 @@ nav img {
   .nav-links ul {
     flex-direction: column;
     gap: 0;
-    padding: 2rem;
+    padding: 4rem 1rem 1rem;
     height: 100%;
     justify-content: flex-start;
   }
   
   .nav-links ul li {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   
   .nav-links ul li a {
     display: block;
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-primary);
   }
   
   .mobile-close {
+    display: flex;
     position: absolute;
     top: 1rem;
     right: 1rem;
     background: none;
     border: none;
-    color: white;
+    color: var(--text-primary);
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    z-index: 10000;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
   }
   
   .mobile-close:hover {
-    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
   }
 }
 
